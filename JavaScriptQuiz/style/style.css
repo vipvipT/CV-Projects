@@ -1,0 +1,33 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #1b132b;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    background: #03bcf4;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 2px;
+    font-weight: bolder;
+    transition: .4s;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #1b132b05);
+    
+}
+
+#button:hover {
+    box-shadow: 0px 0px 20px #03bcf4,
+                0px 0px 35px #03bcf4c5;
+}

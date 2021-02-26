@@ -1,0 +1,202 @@
+:root {
+    --default-color: #f1f1f1;
+}
+
+body {
+    background: #2b2b2b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+    color: var(--default-color);
+    font-weight: 200;
+    font-size: 45px;
+}
+
+.div-button {
+    position: absolute;
+    left: 50%;
+    top: 140px;
+    transform: translate(-50%, -15%);
+}
+
+#add-card {
+    background: transparent;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: var(--default-color);
+    border: 1px solid var(--default-color);
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+    user-select: none;
+}
+
+#add-card:focus {
+    border: 2px solid #0099ff;
+}
+
+.flashcard-grid {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-top: 360px;
+}
+
+
+.flashcard-items {
+    display: inline;
+    border: 3px solid #b13800;
+    border-radius: 10px;
+    background: #e2e0e0;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 90%;
+    user-select: none;
+}
+
+
+#input-cards {
+    color: var(--default-color);
+    font-size: 23px;
+    position: absolute;
+    top: 120px;
+    left: 83%;
+    transform: translate(-70%, -10%);
+    border: 2px solid grey;
+    padding: 10px;
+}
+
+#input-cards > p {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 500px;
+    height: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.save-button-div {
+    padding: 2px;
+}
+
+#save-button {
+    padding: 10px;
+    background: transparent;
+    border: 2px solid var(--default-color);
+    border-radius: 5px;
+    color: #e9e7e7;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+#close {
+    position: absolute;
+    top: -1%;
+    left: 93.5%;
+    font-size: 35px;
+    color: #fd4848;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none;
+}
+
+#how-to-use {
+    position: absolute;
+    color: #f1f1f191;
+    font-size: 18px;
+    top: 20px;
+    left: 40px;
+    user-select: none;
+}
+
+.answer {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1367px) {
+    textarea {
+        width: 350px;
+        height: 20px;
+        padding: 10px;
+        outline: none;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+
+    #input-cards {
+        color: var(--default-color);
+        font-size: 23px;
+        position: absolute;
+        top: 120px;
+        left: 87%;
+        transform: translate(-70%, -10%);
+        border: 2px solid grey;
+        padding: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 932.9px) {
+    textarea {
+        width: 350px;
+        height: 20px;
+        padding: 10px;
+        outline: none;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+
+    #input-cards {
+        color: var(--default-color);
+        font-size: 23px;
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        border: 2px solid grey;
+        padding: 10px;
+        background: #2b2b2b; 
+    }
+
+    #close {
+        position: absolute;
+        top: -1%;
+        left: 91%;
+        font-size: 35px;
+        color: #fd4848;
+        font-weight: 900;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #how-to-use {
+        position: absolute;
+        color: #f1f1f191;
+        font-size: 18px;
+        top: 510px;
+        text-align: center;
+        user-select: none;
+    }
+
+}
