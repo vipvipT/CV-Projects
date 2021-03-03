@@ -1,0 +1,31 @@
+body {
+    background: whitesmoke;
+}
+
+form {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 550px;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+small {
+    color: grey;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        width: 350px;
+    
+    }
+}
