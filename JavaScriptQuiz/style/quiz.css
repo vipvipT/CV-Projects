@@ -1,0 +1,92 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #1b132b;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 120px;
+    border: 3px solid #5709f3;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px #5c0ff750;
+    
+}
+
+.count {
+    font-size: 25px;
+}
+
+.option {
+    background: #5709f3;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px #5c0ff707;
+    transition: .3s;
+    cursor: pointer;
+    width: 95%;
+}
+
+.option:hover {
+    background: #4203c0;
+    box-shadow: 0px 0px 10px #5c0ff78a;
+}
+
+.alreadyAnswered {
+    pointer-events: none;
+}
+
+.hide {
+    display: none;
+}
+
+
+.next {
+    outline: none;
+    background: #0967f3;
+    box-shadow: 0px 0px 20px #0967f33d;
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 16px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.next:hover {
+    background: #3f88f5;
+}
+
+#gameOver {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        width: 75%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+        padding: 50px;
+        border: 3px solid #5709f3;
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px #5c0ff750;
+        
+    }
+}
